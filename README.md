@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## License
+
+- **Code**: MIT License (see `LICENSE`)
+- **Content** (blog posts in `content/**`): Creative Commons Attribution 4.0 International (CC BY 4.0) (see `LICENSE-CONTENT`)
+
 ## Getting Started
 
 First, run the development server:
