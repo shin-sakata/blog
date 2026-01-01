@@ -6,9 +6,11 @@ import { Footer, Layout, Navbar, ThemeSwitch } from "nextra-theme-blog";
 export function BlogShell({
   children,
   pageMap,
+  year,
 }: {
   children: React.ReactNode;
   pageMap: PageMapItem[];
+  year: number;
 }) {
   return (
     <Layout
@@ -20,9 +22,7 @@ export function BlogShell({
       }
     >
       {children}
-      <Footer>© {new Date().getFullYear()} Shin</Footer>
+      <Footer>© {year} Shin</Footer>
     </Layout>
   );
 }
-
-

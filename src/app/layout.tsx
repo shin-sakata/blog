@@ -19,11 +19,14 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const pageMap = (await getPageMap()) as PageMapItem[];
+  const year = new Date().getFullYear();
 
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
       <body>
-        <BlogShell pageMap={pageMap}>{children}</BlogShell>
+        <BlogShell pageMap={pageMap} year={year}>
+          {children}
+        </BlogShell>
       </body>
     </html>
   );
